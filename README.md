@@ -15,9 +15,3 @@ This project automates AWS resource tracking using AWS CLI and Shell Scripting. 
 - **Shell scripting** enabled (Linux/macOS/WSL).
 - Basic knowledge of **Cron Jobs**.
 
-## Installation & Usage
-1. **Clone the repository**  
-   ```bash
-   git clone https://github.com/yourusername/aws-resource-tracking.git
-   cd aws-resource-tracking
-
