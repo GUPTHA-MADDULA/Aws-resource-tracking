@@ -26,9 +26,9 @@ crontab -e
 
 ### **2. Add the following line at the end of the file**  
 ```bash
-0 17 * * * /home/ec2-user/aws_resource_tracker.sh >> /home/ec2-user/report.log 2>&1
+24 12 * * * /home/ec2-user/aws_resource_tracker.sh >> /home/ec2-user/report.log 2>&1
 ```  
-- `0 17 * * *` → Runs the script daily at **5:00 PM**.  
+- `42 12 * * *` → Runs the script daily at **12;42 PM**.  
 - `/home/ec2-user/aws_resource_tracker.sh` → Path to the AWS tracking script.  
 - `>> /home/ec2-user/report.log 2>&1` → Appends output and errors to `report.log`.  
 
