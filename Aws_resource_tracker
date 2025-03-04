@@ -1,0 +1,39 @@
+#!/bin/bash
+
+#set -x  # Debug mode (uncomment to enable)
+
+###########################
+# Author: Ramakrishna Guptha
+# Date: 4th-March
+# Version: v1.2
+###########################
+
+# This script reports AWS resource usage:
+# - AWS S3
+# - AWS EC2
+# - AWS Lambda
+# - AWS IAM Users
+
+# Define the log file
+log_file="/home/ec2-user/report.log"
+
+# Adding timestamp to the report
+echo "===== Report Generated on $(date) ======"
+
+# Section: List S3 Buckets
+echo -e "\n======= S3 Buckets ======="
+aws s3 ls
+
+# Section: List EC2 Instances
+echo -e "\n======= EC2 Instances ======="
+aws ec2 describe-instances
+
+# Section: List Lambda Functions
+echo -e "\n======= Lambda Functions ======="
+
+aws lambda list-functions
+
+# Section: List IAM Users
+echo -e "\n======= IAM Users ======="
+
+aws iam list-users

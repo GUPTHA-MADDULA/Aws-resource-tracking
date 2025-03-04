@@ -1,2 +1,2 @@
-0 1 * * 0 /home/ec2-user/script.sh
+42 12 * * * /home/ec2-user/aws_resource_tracker.sh >> /home/ec2-user/report.log 2>&1
 
